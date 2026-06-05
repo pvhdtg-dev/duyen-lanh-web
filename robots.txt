@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pvhdtg-dev.github.io/duyen-lanh-web/sitemap.xml
