@@ -1097,3 +1097,125 @@ h3 {
   .contact-actions .btn { width: 100%; }
   .footer-inner { flex-direction: column; text-align: center; }
 }
+
+/* ═══════════ FLOATING CONTACT BUTTONS ═══════════ */
+.fab-container {
+  position: fixed;
+  right: 20px;
+  bottom: 24px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.fab-btn {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.fab-btn:hover,
+.fab-btn:focus-visible {
+  transform: scale(1.08);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.24);
+}
+
+.fab-btn:active {
+  transform: scale(0.96);
+}
+
+/* Call button - teal */
+.fab-call {
+  background: var(--primary, #0F8F83);
+}
+
+.fab-call svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--white, #FFFFFF);
+}
+
+/* Zalo button - Zalo blue */
+.fab-zalo {
+  background: #0068FF;
+}
+
+.fab-zalo svg {
+  width: 26px;
+  height: 26px;
+  fill: #FFFFFF;
+}
+
+/* Label on hover */
+.fab-btn .fab-label {
+  position: absolute;
+  right: 64px;
+  background: var(--text, #1F2937);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.fab-btn:hover .fab-label,
+.fab-btn:focus-visible .fab-label {
+  opacity: 1;
+}
+
+/* Pulse animation on call button */
+.fab-call::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 2px solid var(--primary, #0F8F83);
+  animation: fab-pulse 2s infinite;
+  opacity: 0.6;
+}
+
+@keyframes fab-pulse {
+  0%   { transform: scale(1);   opacity: 0.6; }
+  70%  { transform: scale(1.25); opacity: 0; }
+  100% { transform: scale(1.25); opacity: 0; }
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .fab-container {
+    right: 14px;
+    bottom: 18px;
+    gap: 10px;
+  }
+
+  .fab-btn {
+    width: 48px;
+    height: 48px;
+  }
+
+  .fab-call svg,
+  .fab-zalo svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .fab-btn .fab-label {
+    display: none;
+  }
+}
