@@ -1060,11 +1060,174 @@ h3 {
 }
 
 /* ═══════════ FOOTER ═══════════ */
-.site-footer { background: var(--text); color: rgba(255,255,255,0.7); padding: 32px 0; }
-.footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; font-size: 14px; }
-.footer-links { display: flex; gap: 20px; }
-.footer-links a { color: rgba(255,255,255,0.6); transition: color 0.2s; }
-.footer-links a:hover { color: white; }
+.site-footer {
+  background: #111827;
+  color: rgba(255,255,255,0.7);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer-top {
+  padding: 56px 0 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  gap: 40px;
+}
+
+.footer-col h4 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: 0.01em;
+}
+
+/* Col 1: Brand */
+.footer-brand .footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.footer-brand .footer-logo img {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+}
+
+.footer-brand .footer-logo span {
+  color: #fff;
+  font-weight: 800;
+  font-size: 17px;
+}
+
+.footer-brand .footer-tagline {
+  color: rgba(255,255,255,0.45);
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.6);
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  background: var(--primary, #0F8F83);
+  color: #fff;
+}
+
+.footer-social svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+/* Col 2-3: Links */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  color: rgba(255,255,255,0.55);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+}
+
+/* Col 4: Contact */
+.footer-contact li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: rgba(255,255,255,0.55);
+}
+
+.footer-contact li svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--primary, #0F8F83);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.footer-contact li a {
+  color: rgba(255,255,255,0.55);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-contact li a:hover {
+  color: #fff;
+}
+
+/* Bottom bar */
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 16px 0;
+  font-size: 13px;
+  color: rgba(255,255,255,0.35);
+}
+
+.footer-bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-top {
+    padding: 40px 0 28px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .footer-bottom-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
 /* ═══════════ RESPONSIVE — Tablet ═══════════ */
 @media (max-width: 920px) {
@@ -1095,7 +1258,6 @@ h3 {
   .blog-card h3 { font-size: 16px; }
   .contact-actions { flex-direction: column; }
   .contact-actions .btn { width: 100%; }
-  .footer-inner { flex-direction: column; text-align: center; }
 }
 
 /* ═══════════ FLOATING CONTACT BUTTONS ═══════════ */
