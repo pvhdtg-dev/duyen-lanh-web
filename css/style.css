@@ -876,6 +876,7 @@ h3 {
 .pricing-card {
   padding: 32px 24px; background: var(--cream-warm); border-radius: var(--radius-lg);
   border: 1px solid var(--border); text-align: center; transition: box-shadow 0.25s ease; position: relative;
+  display: flex; flex-direction: column;
 }
 .pricing-card:hover { box-shadow: var(--shadow-md); }
 .pricing-card.popular { border-color: var(--primary); box-shadow: 0 0 0 1px var(--primary), var(--shadow-md); }
@@ -888,16 +889,16 @@ h3 {
 
 .price { font-size: 36px; font-weight: 800; color: var(--primary); margin: 12px 0 6px; }
 .price span { font-size: 16px; font-weight: 500; color: var(--muted); }
-.price-desc { font-size: 13px; color: var(--muted); margin-bottom: 20px; min-height: 36px; }
+.price-desc { font-size: 13px; color: var(--muted); margin-bottom: 20px; }
 
-.pricing-card ul { text-align: left; margin-bottom: 24px; }
+.pricing-card ul { text-align: left; margin-bottom: 24px; flex: 1; }
 .pricing-card ul li {
   padding: 8px 0; font-size: 14px; color: var(--muted); border-bottom: 1px solid var(--border);
   position: relative; padding-left: 20px;
 }
 .pricing-card ul li::before { content: '\2713'; position: absolute; left: 0; color: var(--primary); font-weight: 700; }
 .pricing-card ul li:last-child { border-bottom: 0; }
-.pricing-card .btn { width: 100%; }
+.pricing-card .btn { width: 100%; margin-top: auto; }
 .pricing-monthly .price { color: var(--earth); }
 .pricing-monthly .btn-outline { border-color: var(--earth); color: var(--earth); }
 .pricing-monthly .btn-outline:hover { background: var(--earth); color: white; }
