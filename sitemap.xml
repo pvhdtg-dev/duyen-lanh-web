@@ -117,4 +117,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Bài viết mới -->
+  <url>
+    <loc>https://duyenlanhweb.com/bai-viet/cach-dua-cua-hang-len-google-maps.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
