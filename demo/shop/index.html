@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhà Xinh Shop - Thời Trang & Phụ Kiện</title>
+    <meta name="description" content="Nhà Xinh Shop - Cửa hàng thời trang, phụ kiện, quà tặng. Hàng chất lượng, giá tốt, giao hàng nhanh.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; scroll-behavior: smooth; }
+        body { font-family: 'Be Vietnam Pro', Arial, Helvetica, sans-serif; color: #4a3f35; background: #fdf8f3; line-height: 1.7; }
+
+        /* Top bar */
+        .top-bar { background: #e07a5f; color: white; text-align: center; padding: 8px; font-size: 0.85rem; font-weight: 500; }
+
+        nav { position: fixed; top: 36px; width: 100%; background: rgba(253,248,243,0.95); backdrop-filter: blur(10px); z-index: 100; padding: 15px 0; border-bottom: 1px solid #e8d5c4; }
+        nav .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { font-size: 1.5rem; font-weight: 700; color: #e07a5f; }
+        nav .logo span { color: #3d405b; }
+        nav a { text-decoration: none; color: #6b5b4e; margin-left: 25px; font-weight: 500; font-size: 0.95rem; transition: color 0.3s; }
+        nav a:hover { color: #e07a5f; }
+
+        .hero { height: 80vh; background: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url('images/hero.jpg') center/cover no-repeat; display: flex; align-items: center; justify-content: center; text-align: center; color: white; margin-top: 101px; }
+        .hero h1 { font-size: 3rem; font-weight: 700; margin-bottom: 15px; text-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+        .hero p { font-size: 1.2rem; font-weight: 300; margin-bottom: 30px; max-width: 600px; }
+        .btn { display: inline-block; padding: 14px 35px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1rem; transition: all 0.3s; cursor: pointer; border: none; }
+        .btn-primary { background: #e07a5f; color: white; }
+        .btn-primary:hover { background: #cc6a4f; transform: translateY(-2px); box-shadow: 0 5px 20px rgba(224,122,95,0.4); }
+        .btn-outline { border: 2px solid white; color: white; margin-left: 15px; }
+        .btn-outline:hover { background: white; color: #3d405b; }
+
+        section { padding: 80px 0; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h2 { font-size: 2.2rem; font-weight: 700; color: #3d405b; margin-bottom: 10px; }
+        .section-title p { color: #8b7f74; font-size: 1.05rem; }
+        .divider { width: 60px; height: 3px; background: #e07a5f; margin: 15px auto; border-radius: 2px; }
+
+        /* Products */
+        .products-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        .product-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 5px 25px rgba(0,0,0,0.05); transition: transform 0.3s; text-align: center; }
+        .product-card:hover { transform: translateY(-5px); }
+        .product-card img { width: 100%; height: 250px; object-fit: cover; }
+        .product-card .info { padding: 18px; }
+        .product-card h3 { font-size: 1rem; margin-bottom: 5px; color: #3d405b; }
+        .product-card .price { color: #e07a5f; font-weight: 700; font-size: 1.05rem; }
+        .product-card .old-price { text-decoration: line-through; color: #bbb; font-size: 0.85rem; margin-left: 8px; }
+        .badge { display: inline-block; background: #e07a5f; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; margin-bottom: 8px; }
+
+        #about { background: white; }
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .about-grid img { width: 100%; border-radius: 16px; }
+        .about-grid h3 { font-size: 1.5rem; margin-bottom: 15px; color: #3d405b; }
+        .about-grid p { color: #6b5b4e; margin-bottom: 12px; }
+        .features { list-style: none; margin-top: 20px; }
+        .features li { padding: 8px 0; padding-left: 25px; position: relative; }
+        .features li::before { content: '♥'; position: absolute; left: 0; color: #e07a5f; }
+
+        /* Categories */
+        .cats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+        .cat-card { background: white; border-radius: 12px; padding: 25px 15px; text-align: center; box-shadow: 0 3px 15px rgba(0,0,0,0.04); cursor: pointer; transition: all 0.3s; }
+        .cat-card:hover { background: #e07a5f; color: white; }
+        .cat-card:hover .emoji { transform: scale(1.2); }
+        .cat-card .emoji { font-size: 2.5rem; margin-bottom: 10px; transition: transform 0.3s; display: block; }
+        .cat-card h4 { font-size: 0.95rem; font-weight: 600; }
+
+        footer { background: #3d405b; color: #c4bcc8; padding: 50px 0 20px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-bottom: 30px; }
+        footer h4 { color: white; margin-bottom: 15px; font-size: 1.1rem; }
+        footer p, footer a { color: #c4bcc8; font-size: 0.9rem; line-height: 2; }
+        footer a { text-decoration: none; }
+        footer a:hover { color: #e07a5f; }
+        .footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid #555570; font-size: 0.85rem; }
+
+        .floating-contact { position: fixed; bottom: 30px; right: 30px; z-index: 200; display: flex; flex-direction: column; gap: 12px; }
+        .floating-contact a { width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.3s; text-decoration: none; color: white; font-weight: 700; font-size: 0.8rem; }
+        .floating-contact a:hover { transform: scale(1.1); }
+        .btn-call { background: #4caf50; }
+        .btn-zalo { background: #0068ff; }
+
+        @media (max-width: 768px) {
+            nav .nav-links { display: none; }
+            .hero h1 { font-size: 2rem; }
+            .products-grid, .cats { grid-template-columns: repeat(2, 1fr); }
+            .about-grid, .footer-grid { grid-template-columns: 1fr; }
+            .btn-outline { margin-left: 0; margin-top: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">🎉 Khai trương giảm 20% toàn bộ sản phẩm — Áp dụng hết tháng này!</div>
+    <nav>
+        <div class="container">
+            <div class="logo">Nhà Xinh <span>Shop</span></div>
+            <div class="nav-links">
+                <a href="#home">Trang chủ</a>
+                <a href="#categories">Danh mục</a>
+                <a href="#products">Sản phẩm</a>
+                <a href="#about">Giới thiệu</a>
+                <a href="#contact">Liên hệ</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div>
+            <h1>Nhà Xinh Shop</h1>
+            <p>Thời trang, phụ kiện, quà tặng xinh xắn cho bạn và gia đình. Hàng chất lượng — giá yêu thương.</p>
+            <a href="#products" class="btn btn-primary">🛍️ Xem Sản Phẩm</a>
+            <a href="tel:0921066661" class="btn btn-outline">📞 Gọi Tư Vấn</a>
+        </div>
+    </section>
+
+    <section id="categories">
+        <div class="container">
+            <div class="section-title">
+                <h2>Danh Mục Sản Phẩm</h2>
+                <div class="divider"></div>
+                <p>Đa dạng mặt hàng cho mọi nhu cầu</p>
+            </div>
+            <div class="cats">
+                <div class="cat-card"><span class="emoji">👗</span><h4>Thời Trang Nữ</h4></div>
+                <div class="cat-card"><span class="emoji">👜</span><h4>Túi Xách</h4></div>
+                <div class="cat-card"><span class="emoji">💍</span><h4>Phụ Kiện</h4></div>
+                <div class="cat-card"><span class="emoji">🎁</span><h4>Quà Tặng</h4></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sản Phẩm Nổi Bật</h2>
+                <div class="divider"></div>
+                <p>Hàng mới về mỗi tuần — cập nhật xu hướng liên tục</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="images/hero.jpg" alt="Đầm maxi">
+                    <div class="info">
+                        <span class="badge">Hot</span>
+                        <h3>Đầm Maxi Hoa Nhí</h3>
+                        <div class="price">350.000đ <span class="old-price">450.000đ</span></div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="images/service1.jpg" alt="Túi xách">
+                    <div class="info">
+                        <span class="badge">Mới</span>
+                        <h3>Túi Xách Da PU</h3>
+                        <div class="price">280.000đ <span class="old-price">350.000đ</span></div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="images/service2.jpg" alt="Vòng tay">
+                    <div class="info">
+                        <span class="badge">Best</span>
+                        <h3>Set Vòng Tay Bạc</h3>
+                        <div class="price">150.000đ</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="images/hero.jpg" alt="Hộp quà">
+                    <div class="info">
+                        <span class="badge">New</span>
+                        <h3>Hộp Quà Tặng Cao Cấp</h3>
+                        <div class="price">220.000đ <span class="old-price">300.000đ</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <img src="images/service1.jpg" alt="Nhà Xinh Shop">
+                <div>
+                    <h3>Về Nhà Xinh Shop</h3>
+                    <p>Nhà Xinh Shop là cửa hàng bán lẻ chuyên thời trang và phụ kiện dành cho phái đẹp. Chúng tôi chọn lọc sản phẩm kỹ càng, giá cả hợp lý, phục vụ tận tâm.</p>
+                    <ul class="features">
+                        <li>Hàng chất lượng, nguồn gốc rõ ràng</li>
+                        <li>Đổi trả trong 7 ngày</li>
+                        <li>Giao hàng nhanh toàn quốc</li>
+                        <li>Tích điểm thành viên hấp dẫn</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Nhà Xinh Shop</h4>
+                    <p>Cửa hàng thời trang & phụ kiện. Hàng đẹp — giá tốt — giao nhanh.</p>
+                </div>
+                <div>
+                    <h4>Liên Hệ</h4>
+                    <p>📍 789 Trần Văn C, Gò Vấp, TP.HCM</p>
+                    <p>📞 <a href="tel:0921066661">09210.6666.1</a></p>
+                    <p>⏰ 9:00 - 21:00 (T2-CN)</p>
+                </div>
+                <div>
+                    <h4>Hỗ Trợ</h4>
+                    <p><a href="#">Chính sách đổi trả</a></p>
+                    <p><a href="#">Hướng dẫn đặt hàng</a></p>
+                    <p><a href="#">Tích điểm thành viên</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Nhà Xinh Shop. Mẫu demo thiết kế bởi <a href="https://duyenlanhweb.com" style="color:#e07a5f;">Duyên Lành Web</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-contact">
+        <a href="tel:0921066661" class="btn-call" title="Gọi ngay">📞</a>
+        <a href="https://zalo.me/0921066661" class="btn-zalo" title="Zalo">ZA<br>LO</a>
+    </div>
+</body>
+</html>
