@@ -1,127 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- ══════ TRANG CHÍNH ══════ -->
   <url>
     <loc>https://duyenlanhweb.com/</loc>
-    <lastmod>2026-06-08</lastmod>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://duyenlanhweb.com/bang-gia-thiet-ke-website.html</loc>
-    <lastmod>2026-06-08</lastmod>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- ══════ LANDING PAGE DỊCH VỤ ══════ -->
   <url>
     <loc>https://duyenlanhweb.com/thiet-ke-website-cua-hang-nho.html</loc>
-    <lastmod>2026-06-08</lastmod>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://duyenlanhweb.com/thiet-ke-website-quan-cafe.html</loc>
-    <lastmod>2026-06-08</lastmod>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://duyenlanhweb.com/thiet-ke-website-quan-ca-phe.html</loc>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://duyenlanhweb.com/thiet-ke-website-spa.html</loc>
-    <lastmod>2026-06-08</lastmod>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://duyenlanhweb.com/thiet-ke-website-tiem-toc.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://duyenlanhweb.com/thiet-ke-website-tphcm.html</loc>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://duyenlanhweb.com/seo-dia-phuong.html</loc>
-    <lastmod>2026-06-08</lastmod>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://duyenlanhweb.com/quan-ly-website.html</loc>
-    <lastmod>2026-06-08</lastmod>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
+
+  <!-- ══════ DỊCH VỤ ══════ -->
+  <url>
+    <loc>https://duyenlanhweb.com/dich-vu/thiet-ke-website.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://duyenlanhweb.com/dich-vu/quan-tri-website.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://duyenlanhweb.com/dich-vu/seo-website-co-ban.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ══════ BÀI VIẾT ══════ -->
+  <url>
+    <loc>https://duyenlanhweb.com/bai-viet/mot-website-cho-cua-hang-nho-can-co-nhung-gi.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://duyenlanhweb.com/bai-viet/cach-dua-cua-hang-len-google-maps.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://duyenlanhweb.com/bai-viet/website-tinh-co-seo-duoc-khong.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://duyenlanhweb.com/bai-viet/website-khong-database-la-gi.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://duyenlanhweb.com/bai-viet/co-fanpage-roi-co-can-website-khong.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://duyenlanhweb.com/bai-viet/vi-sao-duyen-lanh-web-chon-khach-hang-nho.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://duyenlanhweb.com/bai-viet/vi-sao-can-quan-tri-website-hang-thang.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://duyenlanhweb.com/bai-viet/thiet-ke-website-3-den-8-trieu-gom-nhung-gi.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- ══════ KHÁC ══════ -->
   <url>
     <loc>https://duyenlanhweb.com/privacy.html</loc>
     <lastmod>2026-06-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
-  <!-- Bài viết -->
-  <url>
-    <loc>https://duyenlanhweb.com/bai-viet/website-tinh-co-seo-duoc-khong.html</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://duyenlanhweb.com/bai-viet/website-khong-database-la-gi.html</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://duyenlanhweb.com/bai-viet/co-fanpage-roi-co-can-website-khong.html</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://duyenlanhweb.com/bai-viet/vi-sao-duyen-lanh-web-chon-khach-hang-nho.html</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://duyenlanhweb.com/bai-viet/vi-sao-can-quan-tri-website-hang-thang.html</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://duyenlanhweb.com/bai-viet/thiet-ke-website-3-den-8-trieu-gom-nhung-gi.html</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <!-- Dịch vụ -->
-  <url>
-    <loc>https://duyenlanhweb.com/dich-vu/thiet-ke-website.html</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://duyenlanhweb.com/dich-vu/quan-tri-website.html</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://duyenlanhweb.com/dich-vu/seo-website-co-ban.html</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <!-- Landing pages -->
-  <url>
-    <loc>https://duyenlanhweb.com/thiet-ke-website-tphcm.html</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://duyenlanhweb.com/thiet-ke-website-tiem-toc.html</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <!-- Bài viết mới -->
-  <url>
-    <loc>https://duyenlanhweb.com/bai-viet/cach-dua-cua-hang-len-google-maps.html</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
+
 </urlset>
