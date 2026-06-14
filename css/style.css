@@ -5,7 +5,7 @@
  */
 
 /* ═══════════ FONTS ═══════════ */
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&display=swap');
+/* Font loaded via <link> in HTML head with preconnect — 4 weights only (400,600,700,800) */
 
 /* ═══════════ DESIGN TOKENS ═══════════ */
 :root {
@@ -130,7 +130,7 @@ ul { list-style: none; padding: 0; }
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--primary);
+  color: var(--primary-dark);
   background: var(--primary-light);
   padding: 5px 14px;
   border-radius: 20px;
@@ -512,8 +512,11 @@ h3 {
   margin-bottom: 12px;
 }
 
-.mosaic-content h3 {
+.mosaic-content h3,
+.mosaic-h3 {
+  font-family: 'Be Vietnam Pro', Arial, Helvetica, sans-serif;
   font-size: 28px;
+  font-weight: 600;
   line-height: 1.2;
   margin-bottom: 10px;
   color: #1f2937;
@@ -568,7 +571,8 @@ h3 {
     gap: 4px;
   }
 
-  .mosaic-content h3 {
+  .mosaic-content h3,
+  .mosaic-h3 {
     font-size: 22px;
   }
 
@@ -1121,7 +1125,9 @@ h3 {
   gap: 40px;
 }
 
-.footer-col h4 {
+.footer-col h4,
+.footer-col-title {
+  display: block;
   color: #fff;
   font-size: 15px;
   font-weight: 700;
@@ -1424,4 +1430,38 @@ h3 {
   .fab-btn .fab-label {
     display: none;
   }
+}
+
+/* ═══════════ PERFORMANCE — Reduce motion ═══════════ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto; }
+}
+
+/* ═══════════ PERFORMANCE — Mobile: disable heavy animations ═══════════ */
+/* Mosaic pixel animations are heavy on mobile (324 elements × transitions) */
+@media (max-width: 768px) {
+  .mosaic-pixel {
+    transition: none !important;
+    opacity: 1 !important;
+    transform: scale(1) !important;
+  }
+  /* Disable IntersectionObserver animations on mobile — let cards be visible */
+  .service-card, .pricing-card, .step {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  /* Disable scroll-behavior on mobile (can cause jank) */
+  html { scroll-behavior: auto; }
+  /* Disable FAB pulse animation */
+  .fab-call::before { animation: none; }
+  /* Reduce hover transitions */
+  .portfolio-card:hover { transform: none; }
+  .portfolio-card:hover .portfolio-img img { transform: none; }
+  .service-card:hover { transform: none; }
 }

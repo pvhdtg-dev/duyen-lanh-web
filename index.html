@@ -10,6 +10,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Preconnect for Google Fonts (critical for LCP) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800&display=swap" rel="stylesheet">
   <meta name="robots" content="index, follow, max-snippet:160, max-image-preview:large" />
   <title>Thiết kế website cho cửa hàng nhỏ tại TP.HCM | Duyên Lành Web</title>
   <meta name="description" content="Duyên Lành Web thiết kế website cho cửa hàng nhỏ tại TP.HCM: quán cà phê, spa, shop và dịch vụ địa phương. Website đẹp, chuẩn mobile, dễ liên hệ." />
@@ -187,7 +191,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a class="logo" href="#top">
-        <img src="images/duyen-lanh-web-logo.png" alt="Logo Duyên Lành Web" loading="lazy" />
+        <img src="images/duyen-lanh-web-logo.webp" alt="Logo Duyên Lành Web" width="40" height="40" decoding="async" />
         <span class="logo-text">
           <strong>Duyên Lành Web</strong>
           <small>Website tử tế cho cửa hàng nhỏ</small>
@@ -241,13 +245,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
 
-        <div class="hero-visual" aria-hidden="true">
+        <div class="hero-visual">
           <div class="hero-service-visual">
             <div class="mosaic-card">
               <div class="mosaic-grid" id="mosaicGrid"></div>
               <div class="mosaic-content">
                 <span class="mosaic-label">Dịch vụ</span>
-                <h3 id="mosaicTitle">Thiết kế website</h3>
+                <div id="mosaicTitle" class="mosaic-h3">Thiết kế website</div>
                 <p id="mosaicDesc">Giao diện đẹp, rõ ràng, chuẩn mobile và dễ liên hệ cho cửa hàng nhỏ.</p>
               </div>
               <div class="mosaic-tabs">
@@ -480,10 +484,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h2>Mẫu website không chỉ để đẹp —<br>mà để khách dễ hiểu, dễ liên hệ và tin tưởng</h2>
         </div>
         <div class="portfolio-grid">
-          <article class="portfolio-card" onclick="openLightbox(this.querySelector('img'))"><div class="portfolio-img"><img src="images/quan-cafe.png" alt="Mẫu website quán cà phê" /></div><h3>Quán cà phê</h3><p>Giao diện ấm áp, ảnh lớn, menu trực quan.</p></article>
-          <article class="portfolio-card" onclick="openLightbox(this.querySelector('img'))"><div class="portfolio-img"><img src="images/spa-lam-dep.png" alt="Mẫu website spa làm đẹp" /></div><h3>Spa / Làm đẹp</h3><p>Phong cách nhẹ nhàng, đặt lịch tiện lợi.</p></article>
-          <article class="portfolio-card" onclick="openLightbox(this.querySelector('img'))"><div class="portfolio-img"><img src="images/cua-hang.png" alt="Mẫu website cửa hàng sản phẩm" /></div><h3>Cửa hàng sản phẩm</h3><p>Trưng bày sản phẩm rõ ràng, chuyên nghiệp.</p></article>
-          <article class="portfolio-card" onclick="openLightbox(this.querySelector('img'))"><div class="portfolio-img"><img src="images/dich-vu.png" alt="Mẫu website công ty dịch vụ" /></div><h3>Công ty dịch vụ</h3><p>Giới thiệu dịch vụ, bảng giá, liên hệ nhanh.</p></article>
+          <article class="portfolio-card" onclick="openLightbox(this.querySelector('img'))"><div class="portfolio-img"><img src="images/quan-cafe.webp" alt="Mẫu website quán cà phê" width="800" height="500" loading="lazy" decoding="async" /></div><h3>Quán cà phê</h3><p>Giao diện ấm áp, ảnh lớn, menu trực quan.</p></article>
+          <article class="portfolio-card" onclick="openLightbox(this.querySelector('img'))"><div class="portfolio-img"><img src="images/spa-lam-dep.webp" alt="Mẫu website spa làm đẹp" width="800" height="500" loading="lazy" decoding="async" /></div><h3>Spa / Làm đẹp</h3><p>Phong cách nhẹ nhàng, đặt lịch tiện lợi.</p></article>
+          <article class="portfolio-card" onclick="openLightbox(this.querySelector('img'))"><div class="portfolio-img"><img src="images/cua-hang.webp" alt="Mẫu website cửa hàng sản phẩm" width="800" height="500" loading="lazy" decoding="async" /></div><h3>Cửa hàng sản phẩm</h3><p>Trưng bày sản phẩm rõ ràng, chuyên nghiệp.</p></article>
+          <article class="portfolio-card" onclick="openLightbox(this.querySelector('img'))"><div class="portfolio-img"><img src="images/dich-vu.webp" alt="Mẫu website công ty dịch vụ" width="800" height="500" loading="lazy" decoding="async" /></div><h3>Công ty dịch vụ</h3><p>Giới thiệu dịch vụ, bảng giá, liên hệ nhanh.</p></article>
         </div>
       </div>
     </section>
@@ -544,7 +548,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- Cột 1: Brand -->
         <div class="footer-col footer-brand">
           <div class="footer-logo">
-            <img src="images/duyen-lanh-web-logo.png" alt="Duyên Lành Web" width="36" height="36" />
+            <img src="images/duyen-lanh-web-logo.webp" alt="Duyên Lành Web" width="36" height="36" decoding="async" />
             <span>Duyên Lành Web</span>
           </div>
           <p class="footer-tagline">Website tử tế cho cửa hàng nhỏ — quán cà phê, shop, spa và doanh nghiệp nhỏ.</p>
@@ -560,7 +564,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <!-- Cột 2: Dịch vụ -->
         <div class="footer-col">
-          <h4>Dịch vụ</h4>
+          <strong class="footer-col-title">Dịch vụ</strong>
           <ul>
             <li><a href="dich-vu/thiet-ke-website.html">Thiết kế website</a></li>
             <li><a href="dich-vu/quan-tri-website.html">Quản trị website</a></li>
@@ -574,7 +578,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <!-- Cột 3: Liên kết -->
         <div class="footer-col">
-          <h4>Liên kết</h4>
+          <strong class="footer-col-title">Liên kết</strong>
           <ul>
             <li><a href="bang-gia-thiet-ke-website.html">Bảng giá</a></li>
             <li><a href="bai-viet/">Bài viết</a></li>
@@ -585,7 +589,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <!-- Cột 4: Liên hệ -->
         <div class="footer-col">
-          <h4>Liên hệ</h4>
+          <strong class="footer-col-title">Liên hệ</strong>
           <ul class="footer-contact">
             <li>
               <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
@@ -613,134 +617,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </footer>
 
-  <script>
-    const GRID_SIZE = 18;
-    const grid = document.getElementById("mosaicGrid");
-    const titleEl = document.getElementById("mosaicTitle");
-    const descEl = document.getElementById("mosaicDesc");
-    const tabs = document.querySelectorAll(".mosaic-tab");
-
-    const cells = [];
-
-    for (let i = 0; i < GRID_SIZE * GRID_SIZE; i++) {
-      const cell = document.createElement("span");
-      cell.className = "mosaic-pixel";
-      grid.appendChild(cell);
-      cells.push(cell);
-    }
-
-    const services = [
-      {
-        title: "Thiết kế website",
-        desc: "Giao diện đẹp, rõ ràng, chuẩn mobile và dễ liên hệ cho cửa hàng nhỏ.",
-        color: "#E38A6D",
-        svg: `
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="black">
-            <path d="M44 6c3 0 6 3 6 6 0 2-1 4-2 5L34 31c-2 2-4 3-7 3h-3c-3 0-5 2-5 5 0 2 2 4 5 4 5 0 9 4 9 9 0 7-6 12-13 12S7 59 7 52c0-6 5-11 11-11h7c2 0 4-1 6-2l15-15c1-1 2-3 2-5 0-2-2-4-4-4z"/>
-          </svg>
-        `
-      },
-      {
-        title: "Quản trị website",
-        desc: "Cập nhật nội dung, hình ảnh và kiểm tra hiển thị để website luôn ổn định.",
-        color: "#9AAE7A",
-        svg: `
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="black">
-            <path d="M37 6l2 6a20 20 0 0 1 5 2l6-3 6 6-3 6a20 20 0 0 1 2 5l6 2v8l-6 2a20 20 0 0 1-2 5l3 6-6 6-6-3a20 20 0 0 1-5 2l-2 6h-8l-2-6a20 20 0 0 1-5-2l-6 3-6-6 3-6a20 20 0 0 1-2-5l-6-2v-8l6-2a20 20 0 0 1 2-5l-3-6 6-6 6 3a20 20 0 0 1 5-2l2-6zm-5 16a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/>
-          </svg>
-        `
-      },
-      {
-        title: "SEO cơ bản",
-        desc: "Tối ưu nền tảng để Google hiểu website tốt hơn và khách dễ tìm thấy bạn hơn.",
-        color: "#D98AA1",
-        svg: `
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="black">
-            <path d="M27 8a19 19 0 1 1-12 34l-8 8 5 5 8-8A19 19 0 0 1 27 8zm0 6a13 13 0 1 0 0 26 13 13 0 0 0 0-26zm-5 18 6-6 5 5 7-7 4 4-11 11-5-5-6 6z"/>
-          </svg>
-        `
-      }
-    ];
-
-    function svgToMask(svgString, size) {
-      return new Promise((resolve) => {
-        const img = new Image();
-        img.onload = () => {
-          const canvas = document.createElement("canvas");
-          canvas.width = size;
-          canvas.height = size;
-          const ctx = canvas.getContext("2d");
-          ctx.clearRect(0, 0, size, size);
-          ctx.drawImage(img, 0, 0, size, size);
-
-          const imageData = ctx.getImageData(0, 0, size, size).data;
-          const mask = [];
-
-          for (let i = 0; i < size * size; i++) {
-            const alpha = imageData[i * 4 + 3];
-            mask.push(alpha > 40);
-          }
-
-          resolve(mask);
-        };
-
-        img.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svgString);
-      });
-    }
-
-    async function prepareServices() {
-      for (const service of services) {
-        service.mask = await svgToMask(service.svg, GRID_SIZE);
-      }
-    }
-
-    function renderService(index) {
-      const service = services[index];
-
-      titleEl.textContent = service.title;
-      descEl.textContent = service.desc;
-
-      tabs.forEach((tab, i) => {
-        tab.classList.toggle("active", i === index);
-      });
-
-      cells.forEach((cell, i) => {
-        cell.style.setProperty("--delay", `${Math.random() * 220}ms`);
-
-        if (service.mask[i]) {
-          cell.classList.add("on");
-          cell.style.backgroundColor = service.color;
-        } else {
-          cell.classList.remove("on");
-          cell.style.backgroundColor = "#e9e3d9";
-        }
-      });
-    }
-
-    let current = 0;
-    let autoRotate;
-
-    function startRotate() {
-      clearInterval(autoRotate);
-      autoRotate = setInterval(() => {
-        current = (current + 1) % services.length;
-        renderService(current);
-      }, 3200);
-    }
-
-    tabs.forEach((tab) => {
-      tab.addEventListener("click", () => {
-        current = Number(tab.dataset.index);
-        renderService(current);
-        startRotate();
-      });
-    });
-
-    prepareServices().then(() => {
-      renderService(0);
-      startRotate();
-    });
-  </script>
+  <script src="js/mosaic.js" defer></script>
   <script>
     function getFormModal() { return document.getElementById('formModal'); }
 
@@ -820,7 +697,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       if (e.key === 'Escape' && fm && fm.classList.contains('open')) closeFormModal();
     });
   </script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
   <div class="lightbox" id="lightbox" aria-hidden="true" onclick="closeLightbox()">
     <button class="lightbox-close" aria-label="Đóng" onclick="event.stopPropagation(); closeLightbox();">&times;</button>
     <img class="lightbox-img" id="lightbox-img" src="" alt="" />
