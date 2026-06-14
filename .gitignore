@@ -1,0 +1,11 @@
+# Files tạm / notes
+*.md
+*.txt
+!README.md
+
+# Build output
+demo/
+
+# OS files
+.DS_Store
+Thumbs.db
