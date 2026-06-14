@@ -73,8 +73,11 @@ function closeLightbox() {
     }
   });
 
-  /* ═══════ Smooth reveal on scroll ═══════ */
-  if ('IntersectionObserver' in window) {
+  /* ═══════ Smooth reveal on scroll — skip on mobile/prefers-reduced-motion ═══════ */
+  var isMobile = window.innerWidth < 768;
+  var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (!isMobile && !prefersReducedMotion && 'IntersectionObserver' in window) {
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
