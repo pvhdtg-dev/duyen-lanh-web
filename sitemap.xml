@@ -66,26 +66,7 @@
   </url>
 
   <!-- ══════ DỊCH VỤ ══════ -->
-  <url>
-    <loc>https://duyenlanhweb.com/dich-vu/thiet-ke-website.html</loc>
-    <lastmod>2026-06-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://duyenlanhweb.com/dich-vu/quan-tri-website.html</loc>
-    <lastmod>2026-06-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://duyenlanhweb.com/dich-vu/seo-website-co-ban.html</loc>
-    <lastmod>2026-06-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ══════ BÀI VIẾT ══════ -->
+<!-- ══════ BÀI VIẾT ══════ -->
   <url>
     <loc>https://duyenlanhweb.com/bai-viet/mot-website-cho-cua-hang-nho-can-co-nhung-gi.html</loc>
     <lastmod>2026-06-14</lastmod>
